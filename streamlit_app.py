@@ -38,7 +38,7 @@ from fpdf import FPDF
 
 # Firebase configuration
 firebase_config = {
-    "apiKey": api=st.secrets["FIREBASE_API"],
+    "apiKey": st.secrets["FIREBASE_API"],
     "authDomain": "client-2bbfc.firebaseapp.com",
     "databaseURL": "https://client-2bbfc-default-rtdb.firebaseio.com",
     "projectId": "client-2bbfc",
@@ -57,8 +57,8 @@ except Exception as e:
     auth = None
 
 # Email configuration
-EMAIL_SENDER = "projecttestingsubhash@gmail.com"
-EMAIL_PASSWORD = "zgwynxksfnwzusyk"
+EMAIL_SENDER =  st.secrets["EMAIL_SENDER"]
+EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT =  587
 
