@@ -38,7 +38,7 @@ from fpdf import FPDF
 
 # Firebase configuration
 firebase_config = {
-    "apiKey": "AIzaSyDvFFLr-Fjhma2yae7rx3r7Ei0J6bXJmmI",
+    "apiKey": st.secerts["FIREBASE_API"],
     "authDomain": "client-2bbfc.firebaseapp.com",
     "databaseURL": "https://client-2bbfc-default-rtdb.firebaseio.com",
     "projectId": "client-2bbfc",
